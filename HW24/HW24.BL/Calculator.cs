@@ -23,7 +23,7 @@
 			{
 				return a / b;
 			}
-			throw new Exception("Division by 0 is not possible");
+			throw new DivideByZeroException();
 		}
 	}
 }
