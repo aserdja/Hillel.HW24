@@ -25,5 +25,35 @@
 			}
 			throw new DivideByZeroException();
 		}
+
+		public double Average(IEnumerable<double> arrayOfNumbers)
+		{
+			if (arrayOfNumbers.Count() == 0)
+			{
+				throw new Exception("Collection is empty");
+			}
+
+			return Math.Round((arrayOfNumbers.Average()),2);
+		}
+
+		public double Greatest(IEnumerable<double> arrayOfNumbers)
+		{
+			if (arrayOfNumbers.Count() == 0)
+			{
+				throw new Exception("Collection is empty");
+			}
+
+			return arrayOfNumbers.OrderByDescending(x => x).First();
+		}
+
+		public IEnumerable<double> Sort(IEnumerable<double> arrayOfNumbers)
+		{
+			if (arrayOfNumbers.Count() == 0)
+			{
+				throw new Exception("Collection is empty");
+			}
+
+			return arrayOfNumbers.Order();
+		}
 	}
 }
