@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\HW24.BL\HW24.BL.csproj" />
+    <ProjectReference Include="..\HW24.DAL\HW24.DAL.csproj" />
   </ItemGroup>
 
   <ItemGroup>
